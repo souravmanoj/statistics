@@ -35,7 +35,7 @@ df = df.set_index("Country Name")
 df = df.drop(["Country Code", "Indicator Name", "Indicator Code"], axis=1)
 
 # Select only the 12 countries of interest
-countries = ["United States", "China", "India", "Netherlands", "Japan", "Germany", "Canada", "Brazil", "Australia", "United Kingdom", "France", "South africa"]
+countries = ["United States", "China", "India", "Netherlands", "Japan", "Germany", "Canada", "Brazil", "Australia", "United Kingdom", "France", "South Africa"]
 df = df.loc[countries]
 
 # Select only the years of interest with 5 years as increment
