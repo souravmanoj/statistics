@@ -125,8 +125,8 @@ def plot_methane_emissions(data):
     # Drop unnecessary columns
     data = data.drop(["Country Code", "Indicator Name", "Indicator Code"], axis=1)
 
-    # Select only the 13 countries of interest
-    countries = ["United States", "China", "India", "Netherlands", "Brazil", "Australia", "Canada", "Argentina", "Germany", "United Kingdom", "Italy", "France", "Japan"]
+    # Select only the 12 countries of interest
+    countries = ["United States", "China", "India",  "Brazil", "Australia", "Canada", "Argentina", "Germany", "United Kingdom", "Italy", "France", "Japan"]
     data = data.loc[countries]
 
     # Get only the columns from 1990 to 2020 with 5-year increments
@@ -178,8 +178,8 @@ def plot_nitrous_oxide_emissions(data):
     # Drop unnecessary columns
     data = data.drop(["Country Code", "Indicator Name", "Indicator Code"], axis=1)
 
-    # Select only the 13 countries of interest
-    countries = ["United States", "China", "India", "Netherlands", "Japan", "Germany", "Canada", "Brazil", "Australia", "United Kingdom", "France", "Argentina", "Italy"]
+    # Select only the 12 countries of interest
+    countries = ["United States", "China", "India",  "Japan", "Germany", "Canada", "Brazil", "Australia", "United Kingdom", "France", "Argentina", "Italy"]
     data = data.loc[countries]
 
     # Get only the columns from 1990 to 2015 with 5-year increments
